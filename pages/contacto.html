@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LIBRERIA DE ICONOS FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--ENLACES LINK A ESTILOS PROPIOS Y TITULO-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+ 
+
+<body id="body">
+    <!--ESTRUCTURA SEMANTICA HTML:5-->
+
+
+    <!--N° 1 <== HEADER/NAV-->
+    <header id="header">
+        <img class="headerLogo" src="../icons/Logo provisorio.png" alt="">
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--N° 2 <== MAIN-->
+    <main id="main">
+        <h1>Pagina de Contacto</h1>
+
+        <form>
+            <div>
+                <label for="nombre">Nombre
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"> 
+                </label>
+            </div>
+            <div>
+                <label for="apellido">
+                    Apellido
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    Email
+                    <input type="email" id="email" name="email" placeholder="email@ejemplo.com"> 
+                </label>
+            </div>
+            <div>
+                <label for="telefono">
+                    Teléfono de contacto
+                    <input type="number" id="telefono" name="telefono">
+                </label>
+            </div>
+            <div>
+                <label for="consulta">Consulta
+                <textarea name="consulta" id="consulta" cols="20" rows="10" placeholder="Deje aquí su consulta"></textarea>
+                </label>
+            </div>
+            <!-- Botones -->
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+    </main>
+
+
+    <!--N° 3 <== FOOTER-->
+    <footer id="footer">
+        <section class="footerLogo">
+            <img class="pieLogo" src="../icons/Logo provisorio.png" alt="">
+        </section>
+        <section class="footerNav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <article class="footerNav-copy">
+                <h2>Copyright 2024</h2>
+                <h2>Creado por - Tomas Engelmann Lagos</h2>
+            </article>
+        </section>
+        <section class="footerRedes">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </section>
+    </footer>
+</body>
+</html>

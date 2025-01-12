@@ -1,0 +1,60 @@
+/*ESTILOS RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid;  */
+}
+
+ul {
+    display: inline-block;
+
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+/*================================================================================*/
+
+/*ESTILOS BODY*/
+#body {
+    max-width: 1400px;
+    background-image: url(../img/Background.jpg);
+}
+
+
+/*ESTILOS HEADER*/
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+    position: fixed;
+}
+
+.headerLogo {
+    width: 70px;
+}
+
+#nav {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+
+
+/*ESTILOS MAIN= INDEX*/
+#main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 85px;
+}
+
+/*ESTILOS FOOTER*/
+
+.pieLogo {
+    width: 70px;
+}
+
