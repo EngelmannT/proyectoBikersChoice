@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Kosugi";
     /* border: 1px red solid;  */
 }
 
@@ -13,7 +14,6 @@ ul {
 
 li {
     list-style: none;
-    display: inline-block;
 }
 
 /*================================================================================*/
@@ -38,10 +38,9 @@ li {
 }
 
 #nav {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center
 }
 
 
@@ -52,9 +51,35 @@ li {
     padding-top: 85px;
 }
 
+.fotoDestacado {
+    width: 300px;
+}
+
 /*ESTILOS FOOTER*/
 
-.pieLogo {
-    width: 70px;
+#footer {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 15px;
+}
+
+.footerLogoImg {
+    width: 125px;
+}
+
+.footerRedes {
+    font-size: 30px;
+    display: flex;
+    column-gap: 20px;
 }
 
