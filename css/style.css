@@ -1,85 +1,169 @@
-/*ESTILOS RESET*/
+/* ESTILOS RESET */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Kosugi";
-    /* border: 1px red solid;  */
 }
 
 ul {
     display: inline-block;
-
 }
 
 li {
     list-style: none;
 }
 
-/*================================================================================*/
-
-/*ESTILOS BODY*/
+/*======================== ESTILOS BODY ========================*/
 #body {
-    max-width: 1400px;
+    max-width: 1440px;
     background-image: url(../img/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-
-/*ESTILOS HEADER*/
+/*======================== ESTILOS HEADER ========================*/
 #header {
-    width: 100%;
+    width: 1440px;
     height: 80px;
     background-color: orange;
     position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
 }
 
 .headerLogo {
     width: 70px;
+    height: auto;
 }
 
 #nav {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    text-align: center
+    flex-direction: row;
+    gap: 20px;
 }
 
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
 
-/*ESTILOS MAIN= INDEX*/
+#nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#nav ul li a:hover {
+    color: white;
+}
+
+/*======================== ESTILOS MAIN ========================*/
 #main {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
-    padding-top: 85px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .fotoDestacado {
-    width: 300px;
-}
-
-/*ESTILOS FOOTER*/
-
-#footer {
     width: 100%;
-    height: 170px;
+    max-width: 300px;
+    height: auto;
+}   
+
+/*======================== ESTILOS FOOTER ========================*/
+#footer {
+    width: 1440px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: orange;
+    flex-wrap: wrap;
 }
 
 .footerNav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    row-gap: 15px;
+    gap: 15px;
 }
 
 .footerLogoImg {
     width: 125px;
+    height: auto;
+    margin: 10px;
 }
 
 .footerRedes {
     font-size: 30px;
     display: flex;
-    column-gap: 20px;
+    gap: 20px;
+    justify-content: center;
 }
 
+/*======================== RESPONSIVIDAD ========================*/
+
+/* Tablets (pantallas hasta 768px) */
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Móviles (pantallas hasta 480px) */
+@media (max-width: 480px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .headerLogo {
+        width: 50px;
+    }
+
+    #nav ul {
+        gap: 5px;
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    .footerLogoImg {
+        width: 100px;
+    }
+
+    .footerRedes {
+        font-size: 24px;
+    }
+
+    #footer {
+        padding: 10px;
+    }
+}
