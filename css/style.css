@@ -82,6 +82,10 @@ li {
     height: auto;
 }   
 
+.fotoTienda {
+    width: 220px;
+}
+
 /*======================== ESTILOS FOOTER ========================*/
 #footer {
     width: 1440px;
