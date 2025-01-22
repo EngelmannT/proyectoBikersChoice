@@ -18,7 +18,7 @@ li {
 #body {
     max-width: 1440px;
     background-image: url(../img/Background.jpg);
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -88,26 +88,28 @@ li {
 
 /*======================== ESTILOS FOOTER ========================*/
 #footer {
-    width: 1440px;
+    width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: orange;
     flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
 }
 
 .footerNav {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     gap: 15px;
 }
 
 .footerLogoImg {
     width: 125px;
     height: auto;
-    margin: 10px;
+    margin: 10px auto;
 }
 
 .footerRedes {
@@ -134,7 +136,10 @@ li {
     #footer {
         flex-direction: column;
         gap: 20px;
-        text-align: center;
+    }
+    
+    .footerLogoImg {
+        width: 100px;
     }
 }
 
@@ -160,14 +165,15 @@ li {
     }
 
     .footerLogoImg {
-        width: 100px;
+        width: 80px;
     }
 
     .footerRedes {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #footer {
-        padding: 10px;
+        padding: 15px;
+        gap: 15px;
     }
 }
