@@ -14,9 +14,12 @@ li {
     list-style: none;
 }
 
+h1 {
+    text-align: center;
+}
+
 /*======================== ESTILOS BODY ========================*/
 #body {
-    max-width: 1440px;
     background-image: url(../img/Background.jpg);
     background-size: auto;
     background-repeat: no-repeat;
@@ -86,6 +89,10 @@ li {
     width: 220px;
 }
 
+.bannerh1 {
+    background-color: white;
+    text-align: center;
+}
 /*======================== ESTILOS FOOTER ========================*/
 #footer {
     width: 100%;
@@ -93,10 +100,14 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: orange;
+    background-color: rgb(110, 8, 8);
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
+}
+
+#footer h2 {
+    color: white;
 }
 
 .footerNav {
@@ -117,6 +128,7 @@ li {
     display: flex;
     gap: 20px;
     justify-content: center;
+    color: white;
 }
 
 /*======================== RESPONSIVIDAD ========================*/
