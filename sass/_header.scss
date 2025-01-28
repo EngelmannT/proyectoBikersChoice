@@ -1,0 +1,23 @@
+/*======================== ESTILOS HEADER ========================*/
+#header {
+    width: 1440px;
+    height: 80px;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.headerLogo {
+    width: 70px;
+    height: auto;
+}
+
+#navbarNav {
+    align-content: center;
+}

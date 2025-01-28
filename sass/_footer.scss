@@ -1,0 +1,37 @@
+/*======================== ESTILOS FOOTER ========================*/
+#footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(110, 8, 8);
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+#footer h2 {
+    color: white;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    gap: 15px;
+}
+
+.footerLogoImg {
+    width: 125px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.footerRedes {
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+}

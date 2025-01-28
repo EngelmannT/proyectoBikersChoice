@@ -1,0 +1,172 @@
+/* ESTILOS RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kosugi";
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*======================== ESTILOS BODY ========================*/
+#body {
+    background-image: url(../img/Background.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*======================== ESTILOS HEADER ========================*/
+#header {
+    width: 1440px;
+    height: 80px;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.headerLogo {
+    width: 70px;
+    height: auto;
+}
+
+#navbarNav {
+    align-content: center;
+}
+
+/*======================== ESTILOS MAIN ========================*/
+#main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fotoDestacado {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}   
+
+.fotoTienda {
+    width: 220px;
+}
+
+.bannerh1 {
+    background-color: rgb(110, 8, 8);
+    text-align: center;
+    color: white;
+}
+/*======================== ESTILOS FOOTER ========================*/
+#footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(110, 8, 8);
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+}
+
+#footer h2 {
+    color: white;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    gap: 15px;
+}
+
+.footerLogoImg {
+    width: 125px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.footerRedes {
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+}
+
+/*======================== RESPONSIVIDAD ========================*/
+
+/* Tablets (pantallas hasta 768px) */
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footerLogoImg {
+        width: 100px;
+    }
+}
+
+/* Móviles (pantallas hasta 480px) */
+@media (max-width: 480px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .headerLogo {
+        width: 50px;
+    }
+
+    #nav ul {
+        gap: 5px;
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    .footerLogoImg {
+        width: 80px;
+    }
+
+    .footerRedes {
+        font-size: 20px;
+    }
+
+    #footer {
+        padding: 15px;
+        gap: 15px;
+    }
+}
