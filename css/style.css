@@ -86,6 +86,11 @@ h1 {
   display: flex;
 }
 
+.formulario {
+  display: flex;
+  align-content: center;
+}
+
 /*======================== ESTILOS FOOTER ========================*/
 #footer {
   width: 100%;
