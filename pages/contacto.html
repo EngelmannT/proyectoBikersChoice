@@ -57,44 +57,43 @@
     <!--=========================================================N° 2 <== MAIN==================================================================-->
     <main id="main">
         <h1 class="bannerh1">Pagina de Contacto</h1>
-
-        <form class="formulario">
-            <div>
-                <label for="nombre">
-                    Nombre
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"> 
-                </label>
-            </div>
-            <div>
-                <label for="apellido">
-                    Apellido
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
-                </label>
-            </div>
-            <div>
-                <label for="email">
-                    Email
-                    <input type="email" id="email" name="email" placeholder="email@ejemplo.com"> 
-                </label>
-            </div>
-            <div>
-                <label for="telefono">
-                    Teléfono de contacto
-                    <input type="number" id="telefono" name="telefono">
-                </label>
-            </div>
-            <div>
-                <label for="consulta">Consulta
-                <textarea name="consulta" id="consulta" cols="20" rows="10" placeholder="Deje aquí su consulta"></textarea>
-                </label>
-            </div>
-            <!-- Botones -->
-            <div>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-
+        <div class="container">
+            <form>
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <label for="Nombre" class="form-label">
+                            Nombre
+                        </label>
+                        <input type="text" class="form-control" aria-describedby="nombre" name="Nombre">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="Apellido" class="form-label">
+                            Apellido
+                        </label>
+                        <input type="text" class="form-control" aria-describedby="apellido" name="Apellido">
+                    </div>
+                    <div class="col-lg-5">
+                        <label for="Celular" class="form-label">
+                            Celular
+                        </label>
+                        <input type="number" class="form-control" aria-describedby="celular" name="Celular">
+                    </div>
+                    <div class="col-lg-7">
+                        <label for="E-mail" class="form-label">
+                            Correo Electronico
+                        </label>
+                        <input type="email" class="form-control" aria-describedby="e-mail" name="E-mail">
+                    </div>
+                    <div class="col-12">
+                        <label for="Consulta" class="form-label">
+                            Consulta
+                        </label>
+                        <textarea class="form-control" name="Consulta" rows="3"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-dark mt-3">Enviar consulta</button>
+            </form>
+        </div>
     </main>
 
 
